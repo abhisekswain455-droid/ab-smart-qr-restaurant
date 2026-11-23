@@ -1,1 +1,58 @@
 
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AB Smart QR Restaurant</title>
+  <style>
+    body {
+      font-family: Arial;
+      background: #f5f5f5;
+      text-align: center;
+      padding: 20px;
+    }
+    h1 { color: #e65b19; }
+    .menu {
+      background: white;
+      padding: 20px;
+      margin: 15px auto;
+      border-radius: 12px;
+      max-width: 350px;
+    }
+    button {
+      background: #e65b19;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+  <h1>AB Smart Restaurant</h1>
+  <p>Welcome! Scan, Order & Enjoy.</p>
+
+  <div class="menu">
+    <h2>Chicken Biryani</h2>
+    <p>Price: ₹150</p>
+    <button onclick="order('Chicken Biryani')">
+      Order Now
+    </button>
+  </div>
+
+  <div class="menu">
+    <h2>Veg Fried Rice</h2>
+    <p>Price: ₹100</p>
+    <button onclick="order('Veg Fried Rice')">
+      Order Now
+    </button>
+  </div>
+
+  <script>
+    function order(food) {
+      alert("You selected: " + food);
+    }
+  </script>
+</body>
+</html>
